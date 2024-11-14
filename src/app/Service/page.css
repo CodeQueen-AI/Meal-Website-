@@ -1,0 +1,60 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.services-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-box, .service-done, .service-car {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box h2, .service-done h2, .service-car h2 {
+  font-size: 1.8rem;
+  color: #007BFF;
+  margin-top: 15px;
+}
+
+.service-box p, .service-done p, .service-car p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.service-box img, .service-done img, .service-car img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.service-box:hover, .service-done:hover, .service-car:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 128, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+      grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lemon&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right top, #e4ffc9, #fdffec);
+    height: 100vh;
+}
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 20vh;
+}
+.logo, ul, .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    flex: 1;
+}
+ul {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .icon {
+    flex: 1;
+    gap: 30px;
+}
+.fa-solid {
+    font-size: 20px;
+    color: rgb(67, 64, 64);
+} */
+li {
+    list-style: none;
+    margin: 30px;
+}
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.active {
+    color: #84b74d;
+}
+
+.logo {
+    font-family: 'Lemon', cursive;
+    font-size: 40px;
+    color: white;
+    position: relative;
+}
+
+.logo::before {
+    content: "";
+    background-color: #84b74d;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.logo::after {
+    content: "eals";
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+}
+
+.login, .delivery {
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: #84b74d;
+    font-size: 18px;
+}
+
+.login:hover, .delivery:hover:hover {
+    background-color: #709746;
+}
+
+section {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 1;
+}
+
+.dish {
+    flex: 1;
+    text-align: center;
+}
+
+h2, h1, p {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Lemon', cursive;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Lemon', cursive;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #84b74d;
+}
+
+p {
+    font-size: 18px;
+    color: gray;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    /* .icon {
+        margin-top: 10px;
+    } */
+
+    section {
+        flex-direction: column;
+    }
+
+    .dish img {
+        height: auto;
+        max-height: 60vh;
+    }
+
+    .content, .dish {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        padding: 20px;
+    }
+
+    ul {
+        margin-top: 10px;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .logo::before {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo::after {
+        font-size: 20px;
+    }
+
+    /* .fa-solid {
+        font-size: 16px;
+    } */
+
+    .login, .delivery {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .dish img {
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        flex-direction: column;
+    }
+
+    .content, .dish {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dish img {
+        height: auto;
+        max-height: 40vh;
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .login, .delivery {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}

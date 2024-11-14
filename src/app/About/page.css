@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lemon&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ramaraja&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.banner-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 3.5rem 0;
+}
+.banner-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+.banner-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.banner-text {
+  text-align: center;
+}
+.banner-main-heading {
+  font-family: 'Ramaraja', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 640px) {
+  .banner-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .banner-image {
+    max-width: 400px;
+  }
+
+  .banner-text {
+    text-align: left;
+    max-width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .banner-main-heading {
+    font-size: 2.5rem;
+  }
+
+  .banner-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .banner-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .banner-main-heading {
+    font-size: 3rem;
+  }
+}
