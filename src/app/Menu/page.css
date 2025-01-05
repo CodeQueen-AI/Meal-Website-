@@ -1,26 +1,22 @@
-/* Menu.css */
 .menu-section {
     padding-top: 3rem;
     padding-bottom: 5rem;
 }
-
 .container {
     width: 90%;
     margin: auto;
 }
-
 .menu-title {
-    font-size: 2.5rem;  /* Increased font size */
+    font-size: 2.5rem;  
     font-weight: bold;
-    text-align: center;  /* Center aligned */
-    padding-bottom: 1rem;  /* Reduced space under title */
+    text-align: center; 
+    padding-bottom: 1rem;  
     text-transform: uppercase;
-    color: #333333;  /* Added a dark color to the title */
-    border-bottom: 2px solid #FF6347;  /* Added a border line */
+    color: #333333;
+    border-bottom: 2px solid #FF6347;  
     display: inline-block;
-    margin-bottom: 2rem;  /* Spacing between title and grid */
+    margin-bottom: 2rem;  
 }
-
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -81,5 +77,5 @@
 .menu-item-price {
     font-size: 1.125rem;
     font-weight: 600;
-    color: #6B7280;  /* Secondary text color */
+    color: #6B7280;  
 }
