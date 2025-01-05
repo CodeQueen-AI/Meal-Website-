@@ -1,4 +1,3 @@
-// pages/services.js
 import Image from 'next/image';
 import './page.css'
 
